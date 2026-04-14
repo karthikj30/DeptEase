@@ -1,0 +1,564 @@
+{
+    "net_balances": {
+        "Varun Bansal": 64473.67,
+        "Ayaan Khan": 62528.28999999998,
+        "Adnan Sami": 59977.04000000002,
+        "Rahul Tiwari": 58632.04000000001,
+        "Vijaya Balan": 56033.949999999975,
+        "Mumtaz Begum": 54993.87000000001,
+        "Rajesh Dubey": 53876.21999999997,
+        "Ishita Joshi": 51766.630000000005,
+        "Sunidhi Chauhan": 48858.90000000001,
+        "Shahid Kapoor": 48716.04999999999,
+        "Paresh Rawal": 46796.36999999995,
+        "Nalini Dixit": 43725.09000000001,
+        "Pallavi Shah": 40722.16000000003,
+        "Kavya Iyer": 40456.94000000002,
+        "Sunita Trivedi": 38213.29999999999,
+        "Ojasvi Sharma": 36193.49999999999,
+        "Manoj Bajpayee": 35817.69000000001,
+        "Parineeti Chopra": 31916.680000000004,
+        "Uday Shankar": 31182.089999999993,
+        "Vicky Kaushal": 31165.359999999968,
+        "Kiara Advani": 30931.819999999978,
+        "Taapsee Pannu": 30807.789999999994,
+        "Divya Mukherjee": 30108.97000000001,
+        "Rohit Sethi": 28622.189999999988,
+        "Hema Malini": 28009.27000000002,
+        "Armaan Malik": 27876.15000000001,
+        "Vivaan Mehta": 27331.57,
+        "Anjali Soni": 25729.17000000001,
+        "Charu Lal": 25584.75000000001,
+        "Riya Nair": 24288.540000000005,
+        "Bharti Gill": 23775.200000000015,
+        "Hardik Pandya": 23307.529999999988,
+        "Swati Jain": 22500.690000000002,
+        "Aanya Singh": 22096.269999999968,
+        "Amit Pandey": 21933.64999999997,
+        "Priya Reddy": 21373.64000000001,
+        "Geeta Awasthi": 18137.39,
+        "Saanvi Gupta": 17266.869999999995,
+        "Alka Yagnik": 16657.699999999986,
+        "Alia Bhatt": 16444.7,
+        "Kavita Krishnamurthy": 16257.620000000012,
+        "Yogesh Tomar": 16153.66999999996,
+        "Dev Anand": 15722.859999999991,
+        "Hariharan Iyer": 15584.840000000013,
+        "Rudra Pillai": 15526.500000000004,
+        "Ekta Talwar": 15524.219999999994,
+        "Pooja Desai": 14720.50000000002,
+        "Rishaan Nair": 14216.700000000012,
+        "Taruna Malik": 13243.419999999987,
+        "Asha Bhosle": 13224.129999999992,
+        "Om Puri": 13159.50999999999,
+        "Preetam Chakraborty": 12334.429999999997,
+        "Usha Menon": 11309.900000000018,
+        "Shreya Ghoshal": 11116.509999999995,
+        "Meera Krishnan": 10573.11,
+        "Renu Arora": 10093.350000000008,
+        "Tiger Shroff": 9313.420000000004,
+        "Diya Patel": 8741.219999999987,
+        "Dhruv Verma": 7311.699999999993,
+        "Bipasha Basu": 6839.4099999999835,
+        "Sachin Tendulkar": 6368.979999999974,
+        "Priya Rao": 5720.0599999999895,
+        "Disha Patani": 5523.549999999997,
+        "Lara Dutta": 4941.9400000000005,
+        "Vandana Luthra": 4899.749999999999,
+        "Madhuri Dixit": 3813.8100000000086,
+        "Shaan Kumar": 2464.619999999998,
+        "Kajol Devgan": 1369.3999999999924,
+        "Sneha Agarwal": 1206.5500000000022,
+        "Aditi Bose": -571.9199999999967,
+        "Divyanka Tripathi": -2484.3,
+        "Nawazuddin Siddiqui": -2679.049999999999,
+        "Ankit Mittal": -2995.1399999999976,
+        "Atharva Joshi": -3810.7300000000114,
+        "Chirag Paswan": -4366.769999999997,
+        "Benny Dayal": -4990.129999999996,
+        "Gulshan Devaiah": -6183.460000000016,
+        "Jackie Shroff": -7922.550000000004,
+        "Urvashi Rautela": -9075.779999999988,
+        "Ila Arun": -9636.460000000008,
+        "Fatima Sana": -9910.409999999998,
+        "Javed Akhtar": -9968.099999999993,
+        "Wasim Akram": -11304.069999999996,
+        "Qasim Ali": -11791.220000000001,
+        "Jubin Nautiyal": -11940.740000000007,
+        "Geeta Dutt": -12529.73,
+        "Myra Mehta": -12817.309999999989,
+        "Arnav Bose": -14007.45999999999,
+        "Yami Gautam": -15155.400000000014,
+        "Diljit Dosanjh": -16405.690000000006,
+        "Lakshmi Nambiar": -19168.339999999993,
+        "Arjun Patel": -20129.590000000004,
+        "Arijit Singh": -20160.61,
+        "Vidya Balan": -21698.939999999988,
+        "Zoya Akhtar": -23461.36000000003,
+        "Sonu Nigam": -23485.15000000001,
+        "Sridevi Kapoor": -24243.519999999997,
+        "Pankaj Udhas": -25195.79,
+        "Leena Chandavarkar": -26388.06000000003,
+        "Rahat Fateh": -26459.85,
+        "Puja Hegde": -28624.969999999987,
+        "Ananya Sharma": -30635.089999999997,
+        "Reyansh Gupta": -31300.28999999999,
+        "Lokesh Rahul": -32580.580000000016,
+        "Vishal Dadlani": -33656.43000000002,
+        "Lata Mangeshkar": -34241.42999999999,
+        "Udit Narayan": -35153.530000000006,
+        "Enrique D'Cruz": -35761.81999999999,
+        "Hemant Parekh": -38399.54999999999,
+        "Sanjay Tripathi": -39907.01,
+        "Wajid Khan": -40153.729999999996,
+        "Zaira Wasim": -40540.05000000001,
+        "Carnatic Subramanian": -41640.250000000015,
+        "Chetan Bhagat": -41846.510000000024,
+        "Balram Yadav": -42824.42000000001,
+        "Mira Rajput": -43424.37000000001,
+        "Kunal Khanna": -45698.70000000002,
+        "Govinda Kumar": -47002.59999999999,
+        "Pooja Bhattacharya": -47048.840000000026,
+        "Farhan Qureshi": -48305.36000000003,
+        "Pihu Verma": -57655.74999999997,
+        "Xenia D'Souza": -59894.71999999998
+    },
+    "minimum_transactions_count": 87,
+    "settlement_transactions": [
+        {
+            "debtor": "Xenia D'Souza",
+            "creditor": "Varun Bansal",
+            "amount": 59894.71999999998
+        },
+        {
+            "debtor": "Pihu Verma",
+            "creditor": "Varun Bansal",
+            "amount": 4578.950000000019
+        },
+        {
+            "debtor": "Pihu Verma",
+            "creditor": "Ayaan Khan",
+            "amount": 53076.79999999995
+        },
+        {
+            "debtor": "Farhan Qureshi",
+            "creditor": "Ayaan Khan",
+            "amount": 9451.490000000027
+        },
+        {
+            "debtor": "Farhan Qureshi",
+            "creditor": "Adnan Sami",
+            "amount": 38853.87
+        },
+        {
+            "debtor": "Pooja Bhattacharya",
+            "creditor": "Adnan Sami",
+            "amount": 21123.17000000002
+        },
+        {
+            "debtor": "Pooja Bhattacharya",
+            "creditor": "Rahul Tiwari",
+            "amount": 25925.670000000006
+        },
+        {
+            "debtor": "Govinda Kumar",
+            "creditor": "Rahul Tiwari",
+            "amount": 32706.370000000003
+        },
+        {
+            "debtor": "Govinda Kumar",
+            "creditor": "Vijaya Balan",
+            "amount": 14296.229999999989
+        },
+        {
+            "debtor": "Kunal Khanna",
+            "creditor": "Vijaya Balan",
+            "amount": 41737.71999999999
+        },
+        {
+            "debtor": "Kunal Khanna",
+            "creditor": "Mumtaz Begum",
+            "amount": 3960.9800000000323
+        },
+        {
+            "debtor": "Mira Rajput",
+            "creditor": "Mumtaz Begum",
+            "amount": 43424.37000000001
+        },
+        {
+            "debtor": "Balram Yadav",
+            "creditor": "Mumtaz Begum",
+            "amount": 7608.519999999968
+        },
+        {
+            "debtor": "Balram Yadav",
+            "creditor": "Rajesh Dubey",
+            "amount": 35215.900000000045
+        },
+        {
+            "debtor": "Chetan Bhagat",
+            "creditor": "Rajesh Dubey",
+            "amount": 18660.319999999927
+        },
+        {
+            "debtor": "Chetan Bhagat",
+            "creditor": "Ishita Joshi",
+            "amount": 23186.190000000097
+        },
+        {
+            "debtor": "Carnatic Subramanian",
+            "creditor": "Ishita Joshi",
+            "amount": 28580.439999999908
+        },
+        {
+            "debtor": "Carnatic Subramanian",
+            "creditor": "Sunidhi Chauhan",
+            "amount": 13059.810000000107
+        },
+        {
+            "debtor": "Zaira Wasim",
+            "creditor": "Sunidhi Chauhan",
+            "amount": 35799.0899999999
+        },
+        {
+            "debtor": "Zaira Wasim",
+            "creditor": "Shahid Kapoor",
+            "amount": 4740.960000000108
+        },
+        {
+            "debtor": "Wajid Khan",
+            "creditor": "Shahid Kapoor",
+            "amount": 40153.729999999996
+        },
+        {
+            "debtor": "Sanjay Tripathi",
+            "creditor": "Shahid Kapoor",
+            "amount": 3821.359999999884
+        },
+        {
+            "debtor": "Sanjay Tripathi",
+            "creditor": "Paresh Rawal",
+            "amount": 36085.65000000012
+        },
+        {
+            "debtor": "Hemant Parekh",
+            "creditor": "Paresh Rawal",
+            "amount": 10710.719999999834
+        },
+        {
+            "debtor": "Hemant Parekh",
+            "creditor": "Nalini Dixit",
+            "amount": 27688.830000000155
+        },
+        {
+            "debtor": "Enrique D'Cruz",
+            "creditor": "Nalini Dixit",
+            "amount": 16036.259999999857
+        },
+        {
+            "debtor": "Enrique D'Cruz",
+            "creditor": "Pallavi Shah",
+            "amount": 19725.560000000136
+        },
+        {
+            "debtor": "Udit Narayan",
+            "creditor": "Pallavi Shah",
+            "amount": 20996.599999999897
+        },
+        {
+            "debtor": "Udit Narayan",
+            "creditor": "Kavya Iyer",
+            "amount": 14156.93000000011
+        },
+        {
+            "debtor": "Lata Mangeshkar",
+            "creditor": "Kavya Iyer",
+            "amount": 26300.009999999907
+        },
+        {
+            "debtor": "Lata Mangeshkar",
+            "creditor": "Sunita Trivedi",
+            "amount": 7941.420000000086
+        },
+        {
+            "debtor": "Vishal Dadlani",
+            "creditor": "Sunita Trivedi",
+            "amount": 30271.879999999903
+        },
+        {
+            "debtor": "Vishal Dadlani",
+            "creditor": "Ojasvi Sharma",
+            "amount": 3384.5500000001193
+        },
+        {
+            "debtor": "Lokesh Rahul",
+            "creditor": "Ojasvi Sharma",
+            "amount": 32580.580000000016
+        },
+        {
+            "debtor": "Reyansh Gupta",
+            "creditor": "Ojasvi Sharma",
+            "amount": 228.3699999998571
+        },
+        {
+            "debtor": "Reyansh Gupta",
+            "creditor": "Manoj Bajpayee",
+            "amount": 31071.920000000133
+        },
+        {
+            "debtor": "Ananya Sharma",
+            "creditor": "Manoj Bajpayee",
+            "amount": 4745.769999999877
+        },
+        {
+            "debtor": "Ananya Sharma",
+            "creditor": "Parineeti Chopra",
+            "amount": 25889.32000000012
+        },
+        {
+            "debtor": "Puja Hegde",
+            "creditor": "Parineeti Chopra",
+            "amount": 6027.359999999884
+        },
+        {
+            "debtor": "Puja Hegde",
+            "creditor": "Uday Shankar",
+            "amount": 22597.610000000102
+        },
+        {
+            "debtor": "Rahat Fateh",
+            "creditor": "Uday Shankar",
+            "amount": 8584.47999999989
+        },
+        {
+            "debtor": "Rahat Fateh",
+            "creditor": "Vicky Kaushal",
+            "amount": 17875.370000000108
+        },
+        {
+            "debtor": "Leena Chandavarkar",
+            "creditor": "Vicky Kaushal",
+            "amount": 13289.98999999986
+        },
+        {
+            "debtor": "Leena Chandavarkar",
+            "creditor": "Kiara Advani",
+            "amount": 13098.07000000017
+        },
+        {
+            "debtor": "Pankaj Udhas",
+            "creditor": "Kiara Advani",
+            "amount": 17833.749999999807
+        },
+        {
+            "debtor": "Pankaj Udhas",
+            "creditor": "Taapsee Pannu",
+            "amount": 7362.040000000194
+        },
+        {
+            "debtor": "Sridevi Kapoor",
+            "creditor": "Taapsee Pannu",
+            "amount": 23445.7499999998
+        },
+        {
+            "debtor": "Sridevi Kapoor",
+            "creditor": "Divya Mukherjee",
+            "amount": 797.7700000001969
+        },
+        {
+            "debtor": "Sonu Nigam",
+            "creditor": "Divya Mukherjee",
+            "amount": 23485.15000000001
+        },
+        {
+            "debtor": "Zoya Akhtar",
+            "creditor": "Divya Mukherjee",
+            "amount": 5826.049999999803
+        },
+        {
+            "debtor": "Zoya Akhtar",
+            "creditor": "Rohit Sethi",
+            "amount": 17635.310000000227
+        },
+        {
+            "debtor": "Vidya Balan",
+            "creditor": "Rohit Sethi",
+            "amount": 10986.879999999761
+        },
+        {
+            "debtor": "Vidya Balan",
+            "creditor": "Hema Malini",
+            "amount": 10712.060000000227
+        },
+        {
+            "debtor": "Arijit Singh",
+            "creditor": "Hema Malini",
+            "amount": 17297.20999999979
+        },
+        {
+            "debtor": "Arijit Singh",
+            "creditor": "Armaan Malik",
+            "amount": 2863.400000000209
+        },
+        {
+            "debtor": "Arjun Patel",
+            "creditor": "Armaan Malik",
+            "amount": 20129.590000000004
+        },
+        {
+            "debtor": "Lakshmi Nambiar",
+            "creditor": "Armaan Malik",
+            "amount": 4883.159999999796
+        },
+        {
+            "debtor": "Lakshmi Nambiar",
+            "creditor": "Vivaan Mehta",
+            "amount": 14285.180000000197
+        },
+        {
+            "debtor": "Diljit Dosanjh",
+            "creditor": "Vivaan Mehta",
+            "amount": 13046.389999999803
+        },
+        {
+            "debtor": "Diljit Dosanjh",
+            "creditor": "Anjali Soni",
+            "amount": 3359.300000000203
+        },
+        {
+            "debtor": "Yami Gautam",
+            "creditor": "Anjali Soni",
+            "amount": 15155.400000000014
+        },
+        {
+            "debtor": "Arnav Bose",
+            "creditor": "Anjali Soni",
+            "amount": 7214.469999999792
+        },
+        {
+            "debtor": "Arnav Bose",
+            "creditor": "Charu Lal",
+            "amount": 6792.990000000198
+        },
+        {
+            "debtor": "Myra Mehta",
+            "creditor": "Charu Lal",
+            "amount": 12817.309999999989
+        },
+        {
+            "debtor": "Geeta Dutt",
+            "creditor": "Charu Lal",
+            "amount": 5974.449999999824
+        },
+        {
+            "debtor": "Geeta Dutt",
+            "creditor": "Riya Nair",
+            "amount": 6555.280000000175
+        },
+        {
+            "debtor": "Jubin Nautiyal",
+            "creditor": "Riya Nair",
+            "amount": 11940.740000000007
+        },
+        {
+            "debtor": "Qasim Ali",
+            "creditor": "Riya Nair",
+            "amount": 5792.51999999982
+        },
+        {
+            "debtor": "Qasim Ali",
+            "creditor": "Bharti Gill",
+            "amount": 5998.700000000181
+        },
+        {
+            "debtor": "Wasim Akram",
+            "creditor": "Bharti Gill",
+            "amount": 11304.069999999996
+        },
+        {
+            "debtor": "Javed Akhtar",
+            "creditor": "Bharti Gill",
+            "amount": 6472.429999999837
+        },
+        {
+            "debtor": "Javed Akhtar",
+            "creditor": "Hardik Pandya",
+            "amount": 3495.6700000001565
+        },
+        {
+            "debtor": "Fatima Sana",
+            "creditor": "Hardik Pandya",
+            "amount": 9910.409999999998
+        },
+        {
+            "debtor": "Ila Arun",
+            "creditor": "Hardik Pandya",
+            "amount": 9636.460000000008
+        },
+        {
+            "debtor": "Urvashi Rautela",
+            "creditor": "Hardik Pandya",
+            "amount": 264.989999999827
+        },
+        {
+            "debtor": "Urvashi Rautela",
+            "creditor": "Swati Jain",
+            "amount": 8810.790000000161
+        },
+        {
+            "debtor": "Jackie Shroff",
+            "creditor": "Swati Jain",
+            "amount": 7922.550000000004
+        },
+        {
+            "debtor": "Gulshan Devaiah",
+            "creditor": "Swati Jain",
+            "amount": 5767.349999999838
+        },
+        {
+            "debtor": "Gulshan Devaiah",
+            "creditor": "Aanya Singh",
+            "amount": 416.11000000017884
+        },
+        {
+            "debtor": "Benny Dayal",
+            "creditor": "Aanya Singh",
+            "amount": 4990.129999999996
+        },
+        {
+            "debtor": "Chirag Paswan",
+            "creditor": "Aanya Singh",
+            "amount": 4366.769999999997
+        },
+        {
+            "debtor": "Atharva Joshi",
+            "creditor": "Aanya Singh",
+            "amount": 3810.7300000000114
+        },
+        {
+            "debtor": "Ankit Mittal",
+            "creditor": "Aanya Singh",
+            "amount": 2995.1399999999976
+        },
+        {
+            "debtor": "Nawazuddin Siddiqui",
+            "creditor": "Aanya Singh",
+            "amount": 2679.049999999999
+        },
+        {
+            "debtor": "Divyanka Tripathi",
+            "creditor": "Aanya Singh",
+            "amount": 2484.3
+        },
+        {
+            "debtor": "Aditi Bose",
+            "creditor": "Aanya Singh",
+            "amount": 354.03999999979123
+        },
+        {
+            "debtor": "Aditi Bose",
+            "creditor": "Amit Pandey",
+            "amount": 217.88000000020543
+        }
+    ]
+}

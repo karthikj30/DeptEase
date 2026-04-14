@@ -1,0 +1,58 @@
+[
+  {
+    "id": "dedbc0d85bec44278eba8d38c3ab1532",
+    "original_name": "CodeMinds_BLITZ.pptx.pdf",
+    "stored_name": "20260414_050638_11db0a_CodeMinds_BLITZ.pptx.pdf",
+    "file_type": "pdf",
+    "mime_type": "application/pdf",
+    "file_size": 1720524,
+    "upload_date": "2026-04-14T05:06:38.894409+00:00"
+  },
+  {
+    "id": "6f4b16427d2c4dfea2b7031b8711591c",
+    "original_name": "CodeMinds_Karthik Janardhan.jpeg",
+    "stored_name": "20260414_102036_7b9e6c_CodeMinds_Karthik Janardhan.jpeg",
+    "file_type": "jpeg",
+    "mime_type": "image/jpeg",
+    "file_size": 38555,
+    "upload_date": "2026-04-14T10:20:36.281156+00:00",
+    "category": "general",
+    "title": "CodeMinds_Karthik Janardhan.jpeg",
+    "description": "",
+    "participants": [],
+    "is_encrypted": false
+  },
+  {
+    "id": "8536787aa6fe4aa8866e428145d5700c",
+    "original_name": "ItsaHack ppt script.pdf",
+    "stored_name": "20260414_102147_30f35d_ItsaHack ppt script.pdf",
+    "file_type": "pdf",
+    "mime_type": "application/pdf",
+    "file_size": 79179,
+    "upload_date": "2026-04-14T10:21:47.607309+00:00",
+    "category": "food",
+    "title": "ItsaHack ppt script",
+    "description": "",
+    "participants": [
+      {
+        "name": "karthik",
+        "phone": "",
+        "share": 0,
+        "isPayer": false
+      },
+      {
+        "name": "anushka",
+        "phone": "",
+        "share": 0,
+        "isPayer": false
+      },
+      {
+        "name": "riya",
+        "phone": "",
+        "share": 0,
+        "isPayer": false
+      }
+    ],
+    "is_encrypted": true
+  }
+]

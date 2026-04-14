@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebtEase - Smart Debt Settlement with API</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container-main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            padding: 20px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .summary-box {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .summary-stat {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .summary-label {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .table-container {
+            max-height: 500px;
+            overflow-y: auto;
+            border-radius: 8px;
+        }
+        table {
+            font-size: 0.95rem;
+        }
+        table thead {
+            background-color: #f8f9fa;
+            position: sticky;
+            top: 0;
+        }
+        .balance-positive {
+            color: #28a745;
+            font-weight: 600;
+        }
+        .balance-negative {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        .settlement-row {
+            padding: 12px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .settlement-from {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        .settlement-to {
+            color: #28a745;
+            font-weight: 600;
+        }
+        .settlement-amount {
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .tabs-section {
+            margin-top: 30px;
+        }
+        .nav-tabs .nav-link {
+            color: white;
+            border: none;
+            background-color: rgba(255,255,255,0.2);
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: white;
+            color: #667eea;
+        }
+        .api-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .api-input {
+            margin-bottom: 15px;
+        }
+        .api-input input {
+            border-radius: 5px;
+        }
+        .btn-primary-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .btn-primary-custom:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        .data-source {
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <div class="header">
+            <h1>💰 DebtEase</h1>
+            <p>Smart Debt Settlement Algorithm - Minimizing Transactions with API Integration</p>
+        </div>
+
+        <!-- Data Source Selector -->
+        <div class="card">
+            <div class="card-header">⚙️ Data Source Configuration</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-check">
+                            <input type="radio" class="form-check-input" name="dataSource" value="local" checked>
+                            <span class="form-check-label">📁 Local Files (Local)</span>
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-check">
+                            <input type="radio" class="form-check-input" name="dataSource" value="api">
+                            <span class="form-check-label">🔗 API Integration (Remote)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- API Configuration Section -->
+                <div id="apiConfig" style="display: none; margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 5px;">
+                    <h6>JSONBin.io Configuration</h6>
+                    <div class="api-input">
+                        <label class="form-label">Bin ID:</label>
+                        <input type="text" class="form-control" id="binId" placeholder="Enter your BIN_ID">
+                    </div>
+                    <div class="api-input">
+                        <label class="form-label">API Key:</label>
+                        <input type="password" class="form-control" id="apiKey" placeholder="Enter your API Key">
+                    </div>
+                    <button class="btn btn-primary-custom" onclick="validateAndLoadFromAPI()">Connect to API</button>
+                    <small class="d-block mt-2">
+                        Don't have credentials? <a href="https://jsonbin.io" target="_blank">Create a JSONBin account</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div id="summary" class="row mb-4"></div>
+
+        <div class="tabs-section">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" id="settlements-tab" data-bs-toggle="tab" data-bs-target="#settlements-content">
+                        🔄 Settlement Plan
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="balances-tab" data-bs-toggle="tab" data-bs-target="#balances-content">
+                        💵 Net Balances
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Settlements Tab -->
+                <div class="tab-pane fade show active" id="settlements-content">
+                    <div class="card" style="margin-top: 0;">
+                        <div class="card-header">💸 Optimized Settlement Transactions</div>
+                        <div class="card-body">
+                            <div id="settlements-container" class="loading">
+                                Loading settlement data...
+                            </div>
+                            <div id="source-info-settlements" class="data-source"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Balances Tab -->
+                <div class="tab-pane fade" id="balances-content">
+                    <div class="card" style="margin-top: 0;">
+                        <div class="card-header">📊 Net Balances (Owed Money vs. Owes Money)</div>
+                        <div class="card-body">
+                            <div id="balances-container" class="loading">
+                                Loading balance data...
+                            </div>
+                            <div id="source-info-balances" class="data-source"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentDataSource = 'local';
+        let apiConfig = {};
+
+        // Handle data source selection
+        document.querySelectorAll('input[name="dataSource"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                currentDataSource = e.target.value;
+                document.getElementById('apiConfig').style.display = 
+                    currentDataSource === 'api' ? 'block' : 'none';
+                if (currentDataSource === 'local') {
+                    loadAllData();
+                }
+            });
+        });
+
+        // Validate and load from API
+        function validateAndLoadFromAPI() {
+            const binId = document.getElementById('binId').value;
+            const apiKey = document.getElementById('apiKey').value;
+            
+            if (!binId || !apiKey) {
+                alert('Please enter both Bin ID and API Key');
+                return;
+            }
+            
+            apiConfig = { binId, apiKey };
+            loadAllData();
+        }
+
+        // Fetch data from API or local
+        async function fetchData(type) {
+            if (currentDataSource === 'local') {
+                const response = await fetch(`./${type}.json`);
+                return await response.json();
+            } else {
+                const baseUrl = `https://api.jsonbin.io/v3/b/${apiConfig.binId}/latest`;
+                const response = await fetch(baseUrl, {
+                    headers: {
+                        'X-Access-Key': apiConfig.apiKey
+                    }
+                });
+                const result = await response.json();
+                
+                // Extract the data from the API response
+                return result.record || result;
+            }
+        }
+
+        // Fetch and display settlements
+        async function loadSettlements() {
+            try {
+                const data = await fetchData('settlements');
+                const container = document.getElementById('settlements-container');
+                const sourceInfo = document.getElementById('source-info-settlements');
+                
+                sourceInfo.textContent = `Source: ${currentDataSource === 'local' ? 'Local (settlements.json)' : 'API (JSONBin.io)'}`;
+                
+                if (data.settlements && data.settlements.length > 0) {
+                    let html = `<p class="mb-3"><strong>Total Transactions to Settle:</strong> <span class="badge bg-success">${data.total_transactions}</span></p>`;
+                    
+                    data.settlements.forEach((tx, index) => {
+                        html += `
+                            <div class="settlement-row">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span>
+                                        <span class="settlement-from">${tx.debtor}</span>
+                                        <span style="margin: 0 15px;">→ pays →</span>
+                                        <span class="settlement-to">${tx.creditor}</span>
+                                    </span>
+                                    <span class="settlement-amount">₹${tx.amount.toFixed(2)}</span>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    container.innerHTML = html;
+                } else {
+                    container.innerHTML = '<p>No settlements found.</p>';
+                }
+            } catch (error) {
+                document.getElementById('settlements-container').innerHTML = `<div class="error">Error loading settlements: ${error.message}</div>`;
+            }
+        }
+
+        // Fetch and display balances
+        async function loadBalances() {
+            try {
+                const data = await fetchData('balances');
+                const container = document.getElementById('balances-container');
+                const sourceInfo = document.getElementById('source-info-balances');
+                
+                sourceInfo.textContent = `Source: ${currentDataSource === 'local' ? 'Local (balances.json)' : 'API (JSONBin.io)'}`;
+                
+                if (data && Object.keys(data).length > 0) {
+                    let html = '<div class="table-container"><table class="table table-hover"><thead class="table-light"><tr><th>Participant</th><th>Net Balance</th><th>Status</th></tr></thead><tbody>';
+                    
+                    for (const [name, balance] of Object.entries(data)) {
+                        const status = balance > 0 ? '✅ Owed' : '⚠️ Owes';
+                        const balanceClass = balance > 0 ? 'balance-positive' : 'balance-negative';
+                        html += `
+                            <tr>
+                                <td>${name}</td>
+                                <td class="${balanceClass}">₹${Math.abs(balance).toFixed(2)}</td>
+                                <td>${status}</td>
+                            </tr>
+                        `;
+                    }
+                    html += '</tbody></table></div>';
+                    container.innerHTML = html;
+                } else {
+                    container.innerHTML = '<p>No balance data found.</p>';
+                }
+            } catch (error) {
+                document.getElementById('balances-container').innerHTML = `<div class="error">Error loading balances: ${error.message}</div>`;
+            }
+        }
+
+        // Load summary statistics
+        async function loadSummary() {
+            try {
+                const balances = await fetchData('balances');
+                const settlements = await fetchData('settlements');
+
+                const totalParticipants = Object.keys(balances).length;
+                const totalBalance = Object.values(balances).reduce((a, b) => a + b, 0);
+                const minTransactions = settlements.total_transactions;
+
+                document.getElementById('summary').innerHTML = `
+                    <div class="col-md-3">
+                        <div class="summary-box">
+                            <div class="summary-label">Total Participants</div>
+                            <div class="summary-stat">${totalParticipants}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="summary-box">
+                            <div class="summary-label">Min Transactions</div>
+                            <div class="summary-stat">${minTransactions}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="summary-box">
+                            <div class="summary-label">Total Balance</div>
+                            <div class="summary-stat">₹${totalBalance.toFixed(0)}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="summary-box">
+                            <div class="summary-label">Data Source</div>
+                            <div class="summary-stat" style="font-size: 1rem;">${currentDataSource === 'local' ? 'Local' : 'API'}</div>
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Error loading summary:', error);
+            }
+        }
+
+        // Load all data
+        async function loadAllData() {
+            loadSummary();
+            loadSettlements();
+            loadBalances();
+        }
+
+        // Load on page load
+        window.addEventListener('load', () => {
+            loadAllData();
+        });
+    </script>
+</body>
+</html>
