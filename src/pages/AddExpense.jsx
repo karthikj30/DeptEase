@@ -537,46 +537,20 @@ function AddExpense({ onSignOut }) {
                     <label className="ae-label">
                       <span className="ae-label-icon">👤</span> Paid By
                     </label>
-                    {knownMembers.length > 0 ? (
-                      <div className="ae-paid-by-row">
-                        <select
-                          id="ae-paidby-select"
-                          className="ae-select"
-                          value={paidBy}
-                          onChange={e => { setPaidBy(e.target.value); setErrors(v => ({ ...v, paidBy: null })); }}
-                        >
-                          <option value="">— Select person —</option>
-                          {knownMembers.map(m => (
-                            <option key={m} value={m}>{m}</option>
-                          ))}
-                          <option value="__custom__">+ Add new person…</option>
-                        </select>
-                        {paidBy === '__custom__' && (
-                          <input
-                            className="ae-input"
-                            type="text"
-                            placeholder="Enter name"
-                            autoFocus
-                            onBlur={e => {
-                              const name = e.target.value.trim();
-                              if (name) {
-                                if (!knownMembers.includes(name)) setKnownMembers(prev => [...prev, name]);
-                                setPaidBy(name);
-                              }
-                            }}
-                          />
-                        )}
-                      </div>
-                    ) : (
-                      <input
-                        id="ae-paidby-input"
-                        className="ae-input"
-                        type="text"
-                        placeholder="e.g. Alice"
-                        value={paidBy}
-                        onChange={e => { setPaidBy(e.target.value); setErrors(v => ({ ...v, paidBy: null })); }}
-                      />
-                    )}
+                    <input
+                      id="ae-paidby-input"
+                      className="ae-input"
+                      type="text"
+                      list="known-members-list"
+                      placeholder="e.g. Karthik"
+                      value={paidBy}
+                      onChange={e => { setPaidBy(e.target.value); setErrors(v => ({ ...v, paidBy: null })); }}
+                    />
+                    <datalist id="known-members-list">
+                      {knownMembers.map(m => (
+                        <option key={m} value={m} />
+                      ))}
+                    </datalist>
                     {errors.paidBy && <span className="ae-err">{errors.paidBy}</span>}
                   </div>
 

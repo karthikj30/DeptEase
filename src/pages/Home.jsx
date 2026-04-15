@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { SignInButton, SignUpButton } from '@clerk/clerk-react';
 import Topbar from '../components/Topbar';
 
 function Home() {
@@ -15,8 +16,12 @@ function Home() {
             <h1>Settle group expenses with clarity, speed, and style.</h1>
             <p>DebtEase creates a clean settlement experience for friends, roommates, travel groups, and teams — with fewer transactions and clearer balances.</p>
             <div className="button-row">
-              <button className="button-primary" onClick={() => navigate('/login?mode=signup')}>Create free account</button>
-              <button className="button-secondary" onClick={() => navigate('/login')}>Sign in</button>
+              <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
+                <button className="button-primary">Create free account</button>
+              </SignUpButton>
+              <SignInButton mode="modal" forceRedirectUrl="/dashboard">
+                <button className="button-secondary">Sign in</button>
+              </SignInButton>
             </div>
             <div className="feature-grid">
               <div className="feature-card">

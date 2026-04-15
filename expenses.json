@@ -1,72 +1,38 @@
 [
   {
-    "id": "1776180046803",
-    "description": "dinner",
-    "amount": 1050,
-    "paid_by": "Priya",
-    "split_between": [
-      "Rahul",
-      "karthik",
-      "Priya"
-    ],
-    "split_mode": "equal",
-    "split_details": {},
-    "category": "food",
-    "date": "2026-04-14",
-    "notes": "",
-    "created_at": "2026-04-14T15:20:46.803Z"
-  },
-  {
-    "id": "1776183425769",
-    "description": "Dinner",
-    "amount": 100,
-    "paid_by": "Priya",
-    "split_between": [
-      "Rahul",
-      "Alice",
-      "Priya"
-    ],
-    "split_mode": "equal",
-    "split_details": {},
-    "category": "food",
-    "date": "2026-04-14",
-    "notes": "",
-    "created_at": "2026-04-14T16:17:05.769Z"
-  },
-  {
-    "id": "1776186484078",
-    "description": "Dinner at Zaika",
+    "id": "1776195369461",
+    "description": "Dinner at zaika",
     "amount": 10000,
-    "paid_by": "Karthik",
+    "paid_by": "karthik",
     "split_between": [
       "Anushka",
       "Riya",
       "Alice",
-      "Priya",
-      "Karthik"
+      "Bob",
+      "karthik"
     ],
     "split_mode": "equal",
     "split_details": {},
     "category": "food",
     "date": "2026-04-14",
     "notes": "",
-    "created_at": "2026-04-14T17:08:04.078Z"
+    "created_at": "2026-04-14T19:36:09.461Z"
   },
   {
-    "id": "1776187608361",
-    "description": "Lunch",
+    "id": "1776199877417",
+    "description": "Dinner",
     "amount": 5000,
-    "paid_by": "Anushka",
+    "paid_by": "karthik",
     "split_between": [
       "Anushka",
       "Riya",
-      "Karthik"
+      "karthik"
     ],
     "split_mode": "equal",
     "split_details": {},
     "category": "food",
     "date": "2026-04-14",
     "notes": "",
-    "created_at": "2026-04-14T17:26:48.361Z"
+    "created_at": "2026-04-14T20:51:17.417Z"
   }
 ]
